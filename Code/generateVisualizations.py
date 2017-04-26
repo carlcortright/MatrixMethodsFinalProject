@@ -29,8 +29,8 @@ with open("0Ego.csv", "r") as adjFile:
 
 # Generating Image
 print("Generating Image...")
-pos = sfdp_layout(g)
-graph_draw(g, pos, output_size=(10000, 10000), output="Images/0Ego.png")
+pos = planar_layout(g)
+graph_draw(g, pos=pos, output_size=(2000, 2000), output="Images/0Ego.png")
 
 
 # g = Graph()
